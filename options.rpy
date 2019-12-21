@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("GangGang")
+define config.name = _("Gang Gang")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -142,7 +142,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "GangGang-1576779730"
+define config.save_directory = "GangGang-1576469011"
 
 
 ## Icon ########################################################################
@@ -193,11 +193,6 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
-
-## Set this to a string containing your Apple Developer ID Application to enable
-## codesigning on the Mac. Be sure to change it to your own Apple-issued ID.
-
-# define build.mac_identity = "Developer ID Application: Guy Shy (XHTE5H7Z42)"
 
 
 ## A Google Play license key is required to download expansion files and perform
