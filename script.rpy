@@ -3,31 +3,44 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
-
+define n = Character("Nash", image="nasher",
+                     who_color="#D7C2A0")
+define k = Character("Kiyoshi", image="kiyo",
+                     who_color="#03fc84")
+define t = Character("Tohiro", image="tohi",
+                     who_color="#2e5fdb")
+transform player:
+       xalign 0
+       yalign 0.65
+transform charleft:
+       xalign 0.76
+       yalign 0.65
+transform charright:
+       xalign 0.24
+       yalign 0.65
+transform charmid:
+       xalign 0.5
+       yalign 0.65
+#define wipeleft = ImageDissolve("left.png", 1.0, ramplen=128)
 # The game starts here.
+
+label prefix:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bgroom.jpg") to the
+    # images directory to show it.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene bg cityscape
 
-    scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "Morioh, a small town on the edge of Japan.\n "
+jump meat
 
-    show eileen happy
 
-    # These display lines of dialogue.
+label meat:
+   
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
 
     return
